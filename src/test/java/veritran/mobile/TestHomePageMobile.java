@@ -8,6 +8,7 @@ import veritran.core.TestBase;
 public class TestHomePageMobile extends TestBase{
 
 	private VeritranhomePage homePage;
+	private VeritranCreditCardPage creditCardPage;
 	
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(){
@@ -18,5 +19,8 @@ public class TestHomePageMobile extends TestBase{
     public void testSignIn(){
     	
     	homePage.selectSpanishLanguage();
+    	creditCardPage = homePage.continueButton();
+    	creditCardPage.fillUpCreditCardInformation();
+    	
     }
 }

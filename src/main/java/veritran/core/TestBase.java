@@ -25,7 +25,9 @@ public class TestBase extends TestUtils {
     @BeforeClass(alwaysRun = true)
     public void tearUp() throws Exception {
         startDriver();
-        getDriver().manage().deleteAllCookies();
+        if(!env.getPlatform().equals("local_android")){
+        	getDriver().manage().deleteAllCookies();
+        }
     }
 
     @AfterClass(alwaysRun = true)

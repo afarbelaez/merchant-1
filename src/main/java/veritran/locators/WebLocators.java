@@ -13,6 +13,7 @@ public class WebLocators {
 
 	public static class LandingPage{
 		public static final String userName = "//span[contains(@class, 'txtNombreUser')]";
+		public static final String listOfMoney = "//div[contains(@id, 'PANELCUENTAS')]//tr[contains(@class, 'VTDataGridRowComponent')]//span[contains(@class, 'VTTextComponent pointer')]";
 	}
 	
 }
