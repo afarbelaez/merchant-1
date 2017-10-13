@@ -1,0 +1,4 @@
+veritran/core/TestBase.class
+veritran/core/PageBase.class
+veritran/locators/HomePageLocators.class
+veritran/web/HomePage.class
